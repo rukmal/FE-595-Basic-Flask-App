@@ -4,20 +4,28 @@
     <h1 class="display-4">Simple Calculator</h1>
     <p>This is a simple calculator.</p>
     <hr class="my-4">
-    <!-- <form> -->
-        <div class="form-group">
-            <label for="subjectNumber">Number 1</label>
-            <input type="number" class="form-control" placeholder="Enter first number here" id="numberOne" name="numberOne" required>
-        </div>
-        <div class="form-group">
-            <label for="sensorFrequency">Number 2</label>
-            <input type="number" class="form-control" placeholder="Enter second number here" id="numberTwo" name="numberTwo" required>
-        </div>
+    <div class="form-group">
+        <label for="subjectNumber">Number 1</label>
+        <input type="number" class="form-control" placeholder="Enter first number here" id="numberOne" name="numberOne" required>
+    </div>
+    <div class="form-group">
+        <label for="sensorFrequency">Number 2</label>
+        <input type="number" class="form-control" placeholder="Enter second number here" id="numberTwo" name="numberTwo" required>
+    </div>
+    <div class="text-center">
+    <div class="btn-group">
         <input type="submit" class="btn btn-success btn-lg" name="add" id="add" value="Add">
         <input type="submit" class="btn btn-primary btn-lg" name="subtract" id="subtract" value="Subtract">
         <input type="submit" class="btn btn-danger btn-lg" name="divide" id="divide" value="Divide">
         <input type="submit" class="btn btn-warning btn-lg" name="multiply" id="multiply" value="Multiply">
-    <!-- </form> -->
+    </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+        <h3>Solutions</h3>
+        <div id='solutions'></div>
+    </div>
+
 </div>
 <script src="{{url_for('static', filename='calculate_client.js')}}"></script>
 {% endblock %}
